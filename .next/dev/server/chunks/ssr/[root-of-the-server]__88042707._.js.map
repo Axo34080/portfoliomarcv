@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Marc/Desktop/portfolio-nextjs/portfolio-nextjs/src/app/contact/page.tsx"],"sourcesContent":["import React from 'react';\nimport ContactForm from '@/components/ContactForm';\n\nconst ContactPage = () => {\n    return (\n        <div className=\"container mx-auto p-4\">\n            <h1 className=\"text-3xl font-bold mb-4\">Contactez-moi</h1>\n            <p className=\"mb-4\">Si vous avez des questions ou souhaitez discuter d'un projet, n'hésitez pas à me contacter via le formulaire ci-dessous.</p>\n            <ContactForm />\n        </div>\n    );\n};\n\nexport default ContactPage;"],"names":[],"mappings":";;;;;;;;;;;;AAGA,MAAM,cAAc;IAChB,qBACI,uSAAC;QAAI,WAAU;;0BACX,uSAAC;gBAAG,WAAU;0BAA0B;;;;;;0BACxC,uSAAC;gBAAE,WAAU;0BAAO;;;;;;0BACpB,uSAAC;;;;;;;;;;;AAGb;uCAEe"}}]
+}

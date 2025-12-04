@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-dark: #0a0a0f;
+  --color-cyber-darker: #050507;
+  --color-cyber-blue: #1a1a2e;
+  --color-cyber-cyan: #00f5ff;
+  --color-cyber-magenta: #ff006e;
+  --color-cyber-yellow: #ffbe0b;
+  --color-cyber-purple: #8338ec;
+  
+  --font-family-cyber-title: 'Orbitron', sans-serif;
+  --font-family-cyber-body: 'Inter', sans-serif;
+  
+  --shadow-cyber-glow: 0 0 20px rgb(0 245 255 / 0.3);
+  --shadow-cyber-glow-subtle: 0 0 10px rgb(0 245 255 / 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-family-cyber-body);
+    background: linear-gradient(135deg, var(--color-cyber-darker), var(--color-cyber-dark), var(--color-cyber-blue));
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .cyber-card {
+    background: rgb(10 10 15 / 0.5);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgb(0 245 255 / 0.2);
+    border-radius: 8px;
+  }
+  
+  .cyber-glow-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .cyber-glow-hover:hover {
+    box-shadow: var(--shadow-cyber-glow-subtle);
+    border-color: rgb(0 245 255 / 0.5);
+  }
+  
+  .image-quality {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+  
+  .photo-profile {
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    background: radial-gradient(circle, rgba(0,245,255,0.1) 0%, transparent 70%);
+  }
+}

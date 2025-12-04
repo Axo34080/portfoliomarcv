@@ -1,0 +1,7 @@
+Le fichier /portfolio-nextjs/portfolio-nextjs/public/favicon.ico doit contenir l'icône de la page web. Comme je ne peux pas générer d'icônes directement, je vais vous indiquer que ce fichier doit être remplacé par une icône appropriée.
+
+Pour créer un favicon, vous pouvez utiliser un générateur d'icônes en ligne pour créer un fichier .ico à partir d'une image. Une fois que vous avez votre fichier favicon.ico, vous pouvez le placer dans le dossier public.
+
+Si vous avez besoin d'un fichier favicon.ico vide, voici le contenu :
+
+<!-- Ce fichier est intentionnellement laissé vide. -->

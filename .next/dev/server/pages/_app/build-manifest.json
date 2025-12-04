@@ -1,0 +1,23 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": [
+      "static/chunks/49764_next_dist_compiled_fa770ecd._.js",
+      "static/chunks/49764_next_dist_shared_lib_a36be167._.js",
+      "static/chunks/49764_next_dist_client_bbef9ca3._.js",
+      "static/chunks/49764_next_dist_e5ba70b1._.js",
+      "static/chunks/49764_next_app_d1be0249.js",
+      "static/chunks/[next]_entry_page-loader_ts_6e1c4ee4._.js",
+      "static/chunks/49764_react-dom_cff288b4._.js",
+      "static/chunks/49764_1754c8ef._.js",
+      "static/chunks/[root-of-the-server]__2e82465c._.js",
+      "static/chunks/Desktop_portfolio-nextjs_portfolio-nextjs_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Desktop_portfolio-nextjs_portfolio-nextjs_pages__app_b49af786._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

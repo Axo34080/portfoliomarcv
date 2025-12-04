@@ -1,0 +1,113 @@
+[00:00:01.232] Server  LOG      ✓ Ready in 807ms
+[00:00:04.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.620] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/projects" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/Desktop/p...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Projects} serverProvidedParams={{...}}>
+              <Projects params={Promise} searchParams={Promise}>
+                <div className="pt-16 min-...">
+                  <section>
+                  <section>
+                  <section className="py-16">
+                    <div className="max-w-6xl ...">
+                      <div className="space-y-16">
+                        <div>
+                          <h2>
+                          <div className="grid md:gr...">
+                            <GitHubProjectCard repo={{id:1014290639, ...}} category="personal">
+>                             <a
+>                               href="https://github.com/Axo34080/ToDoList-React"
+>                               target="_blank"
+>                               rel="noopener noreferrer"
+>                               className="block cyber-card p-6 cyber-glow-hover group h-full cursor-pointer border-cy..."
+>                             >
+                                <div>
+                                <div className="flex-1 fle...">
+                                  <div>
+                                  <p>
+                                  <div>
+                                  <div className="flex space...">
+                                    <span>
+>                                   <a
+>                                     href="https://to-do-list-react-iota-seven.vercel.app"
+>                                     target="_blank"
+>                                     rel="noopener noreferrer"
+>                                     onClick={function onClick}
+>                                     className="flex items-center space-x-2 text-cyber-yellow hover:text-white transi..."
+>                                   >
+                            ...
+                        ...
+                  ...
+          ...
+        ...
+
+[00:00:04.620] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:00:24.043] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.519] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <a> a 
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/projects" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/Desktop/p...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Projects} serverProvidedParams={{...}}>
+              <Projects params={Promise} searchParams={Promise}>
+                <div className="pt-16 min-...">
+                  <section>
+                  <section>
+                  <section className="py-16">
+                    <div className="max-w-6xl ...">
+                      <div className="space-y-16">
+                        <div>
+                          <h2>
+                          <div className="grid md:gr...">
+                            <GitHubProjectCard repo={{id:1014290639, ...}} category="personal">
+>                             <a
+>                               href="https://github.com/Axo34080/ToDoList-React"
+>                               target="_blank"
+>                               rel="noopener noreferrer"
+>                               className="block cyber-card p-6 cyber-glow-hover group h-full cursor-pointer border-cy..."
+>                             >
+                                <div>
+                                <div className="flex-1 fle...">
+                                  <div>
+                                  <p>
+                                  <div>
+                                  <div className="flex space...">
+                                    <span>
+>                                   <a
+>                                     href="https://to-do-list-react-iota-seven.vercel.app"
+>                                     target="_blank"
+>                                     rel="noopener noreferrer"
+>                                     onClick={function onClick}
+>                                     className="flex items-center space-x-2 text-cyber-yellow hover:text-white transi..."
+>                                   >
+                            ...
+                        ...
+                  ...
+          ...
+        ...
+
+[00:00:24.519] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. a <a>
+[00:05:06.898] Server  WARN     ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[00:05:06.994] Browser WARN    Image with src "/marc-photo.jpg" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:06.995] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:06:15.642] Server  LOG      ✓ Compiled in 62ms
+[00:06:45.355] Server  LOG      ✓ Compiled in 39ms
+[00:07:47.081] Server  LOG      ✓ Compiled in 36ms
+[00:07:51.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:46.608] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:56.199] Browser WARN    Image with src "/marc-photo.jpg" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:15:56.199] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
