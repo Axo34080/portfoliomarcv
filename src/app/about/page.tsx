@@ -81,39 +81,48 @@ export default function About() {
                   year: "25 ans",
                   title: "Bac S & Reconversion",
                   description: "Décision de changer de voie professionnelle",
-                  color: "cyber-yellow"
+                  color: "cyber-yellow",
+                  status: ""
                 },
                 {
                   year: "Bac+2",
                   title: "OpenClassrooms",
                   description: "Formation développement web en distanciel",
-                  color: "cyber-cyan"
+                  color: "cyber-cyan",
+                  status: ""
                 },
                 {
                   year: "Bac+3",
                   title: "My Digital School",
                   description: "Bachelor en alternance - Développement web",
-                  color: "cyber-magenta"
+                  color: "cyber-magenta",
+                  status: "En cours"
                 },
                 {
                   year: "Futur",
                   title: "Master & Spécialisation IA",
                   description: "Objectif : IA et développement d'applications",
-                  color: "cyber-purple"
+                  color: "cyber-purple",
+                  status: ""
                 }
               ].map((item, index) => (
                 <div key={index} className={`relative flex items-center mb-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'} pl-12 md:pl-0`}>
                     <div className="cyber-card p-4">
-                      <div className={`text-${item.color} font-cyber-title font-bold mb-2`}>
+                      <div className={`text-${item.color} font-cyber-title font-bold mb-2 flex items-center gap-2`}>
                         {item.year}
+                        {item.status && (
+                          <span className="text-xs bg-cyber-magenta/20 text-cyber-magenta px-2 py-1 rounded border border-cyber-magenta/50 animate-pulse">
+                            {item.status}
+                          </span>
+                        )}
                       </div>
                       <h4 className="text-white font-semibold mb-1">{item.title}</h4>
                       <p className="text-gray-300 text-sm">{item.description}</p>
                     </div>
                   </div>
                   
-                  <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-${item.color} rounded-full border-2 border-cyber-dark`}></div>
+                  <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-${item.color} rounded-full border-2 border-cyber-dark ${item.status ? 'ring-4 ring-cyber-magenta/30 animate-pulse' : ''}`}></div>
                 </div>
               ))}
             </div>
@@ -121,11 +130,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* Ma Philosophy */}
+      {/* Ma Philosophie */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-cyber-title text-3xl font-bold text-cyber-cyan mb-12 text-center">
-            Ma Philosophy de Développement
+            Ma Philosophie de Développement
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -190,7 +199,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Centres d'Intérêt - SEULE section avec émojis */}
+      {/* Centres d'Intérêt */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-cyber-title text-3xl font-bold text-cyber-cyan mb-12 text-center">
@@ -198,60 +207,51 @@ export default function About() {
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { icon: "🎬", title: "Cinéma", desc: "Passion pour les films" },
-              { icon: "⚽", title: "Sports", desc: "Activité physique" },
-              { icon: "🎮", title: "Jeux Vidéo", desc: "Gaming & esport" },
-              { icon: "🔬", title: "Nouvelles Tech", desc: "Veille technologique" }
-            ].map((item, index) => (
-              <div key={index} className="cyber-card p-4 text-center cyber-glow-hover">
-                <div className="text-3xl mb-2">{item.icon}</div>
-                <h4 className="text-cyber-cyan font-semibold mb-1">{item.title}</h4>
-                <p className="text-gray-400 text-xs">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Ces passions nourrissent ma créativité et m'inspirent dans mes projets de développement. 
-              La communauté dev et la veille techno font partie intégrante de mon quotidien.
-            </p>
+            <div className="cyber-card p-6 text-center cyber-glow-hover">
+              <div className="text-4xl mb-3">🎮</div>
+              <h4 className="text-white font-semibold mb-2">Gaming</h4>
+              <p className="text-gray-400 text-sm">Jeux vidéo & E-sport</p>
+            </div>
+
+            <div className="cyber-card p-6 text-center cyber-glow-hover">
+              <div className="text-4xl mb-3">🤖</div>
+              <h4 className="text-white font-semibold mb-2">IA</h4>
+              <p className="text-gray-400 text-sm">Intelligence Artificielle</p>
+            </div>
+
+            <div className="cyber-card p-6 text-center cyber-glow-hover">
+              <div className="text-4xl mb-3">🎵</div>
+              <h4 className="text-white font-semibold mb-2">Musique</h4>
+              <p className="text-gray-400 text-sm">Electro & Synthwave</p>
+            </div>
+
+            <div className="cyber-card p-6 text-center cyber-glow-hover">
+              <div className="text-4xl mb-3">🚀</div>
+              <h4 className="text-white font-semibold mb-2">Tech</h4>
+              <p className="text-gray-400 text-sm">Nouvelles technologies</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-cyber-dark/30">
+      <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-cyber-title text-2xl font-bold text-white mb-6">
-            Prêt à collaborer ?
+          <h2 className="font-cyber-title text-3xl md:text-4xl font-bold text-white mb-6">
+            Prêt à <span className="text-cyber-cyan">collaborer</span> ?
           </h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Je suis actuellement à la recherche d'opportunités qui me permettront de mettre en pratique 
-            mes compétences et de continuer à apprendre dans un environnement stimulant.
+            Je suis actuellement à la recherche d'une alternance en Master. 
+            Si vous cherchez un développeur motivé et passionné, n'hésitez pas à me contacter !
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact"
-              className="inline-flex items-center px-8 py-4 bg-cyber-cyan text-cyber-dark font-semibold rounded-lg hover:bg-white transition-all duration-300 shadow-cyber-glow"
-            >
-              Me contacter
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
-            
-            <a 
-              href="/projects"
-              className="inline-flex items-center px-8 py-4 border-2 border-cyber-cyan text-cyber-cyan font-semibold rounded-lg hover:bg-cyber-cyan hover:text-cyber-dark transition-all duration-300"
-            >
-              Voir mes projets
-            </a>
-          </div>
+          <a 
+            href="/contact" 
+            className="inline-block bg-cyber-cyan text-cyber-dark font-bold py-3 px-8 rounded-lg hover:bg-cyber-cyan/80 transition-all duration-300 transform hover:scale-105 shadow-cyber-glow"
+          >
+            Me Contacter
+          </a>
         </div>
       </section>
     </div>
-  )
+  );
 }
