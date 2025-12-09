@@ -125,8 +125,9 @@ export default function About() {
                   {item.status && (
                     <div className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-${item.color} rounded-full border-2 border-cyber-dark ring-4 ring-cyber-magenta/30 animate-pulse`}></div>
                   )}
+                </div>
+              ))}
             </div>
-          ))}
           </div>
         </div>
       </section>
